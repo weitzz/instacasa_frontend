@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -11,8 +12,11 @@ const Header = () => {
     <>
       <header className="bg-[#fcc700] relative">
         <div className="max-w-7xl mx-auto flex items-center justify-between p-2.5">
-          <div className="w-18">
-            <p>Teste Instacasa</p>
+          <div className="w-18 flex flex-row justify-between">
+           
+              <img src="https://via.placeholder.com/100/fff" alt="" className="w-[30px]"/>
+              <p className="text-xl ml-4">Teste Instacasa</p>
+           
           </div>
 
           <div
@@ -35,7 +39,7 @@ const Header = () => {
               <li className="list-none md:mr-2">
                 <Link
                   to="/"
-                  className="flex w-full text-[#212121]  hover:text-red-600 cursor-pointer
+                  className="flex w-full text-[#212121] font-bold  hover:text-[#fff]  cursor-pointer
           pt-2.5 px-2.5
         "
                 >
@@ -46,7 +50,7 @@ const Header = () => {
               <li className="list-none md:mr-2">
                 <Link
                   to="/users"
-                  className="flex w-full text-[#212121]  hover:text-red-600 cursor-pointer
+                  className="flex w-full text-[#212121] font-bold  hover:text-[#fff]  cursor-pointer
           pt-2.5 px-2.5
         "
                 >
@@ -55,24 +59,26 @@ const Header = () => {
               </li>
 
               <li className="list-none md:mr-2">
-                <Link
-                  to="https://blog.instacasa.com.br" target="_blank"
-                  className="flex w-full text-[#212121]  hover:text-red-600 cursor-pointer
+                <a
+                  href="https://blog.instacasa.com.br"
+                  target="_blank"
+                  className="flex w-full text-[#212121]  font-bold  hover:text-[#fff] cursor-pointer
           pt-2.5 px-2.5
         "
                 >
                   Blog
-                </Link>
+                </a>
               </li>
               <li className="list-none md:mr-2">
-              <Link
-                  to="https://instacasa.com.br" target="_blank"
-                  className="flex w-full text-[#212121]  hover:text-red-600 cursor-pointer
+                <a
+                  href="https://instacasa.com.br"
+          
+                  className="flex w-full text-[#212121] font-bold  hover:text-[#fff] cursor-pointer
           pt-2.5 px-2.5
         "
                 >
                   Sair
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
