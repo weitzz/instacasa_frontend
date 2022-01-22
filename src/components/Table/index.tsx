@@ -21,14 +21,15 @@ const Table = () => {
     };
     loadApi();
   }, []);
-  return (
-    <>
-      <table className="table-auto">
-        <thead>
+
+ return (
+    <div className="relative flex items-center justify-center h-screen w-full bg-[#ccc]">
+      <table className=" mt-10 table-auto  bg-red-600">
+        <thead className=" border-b-2 border-gray-200">
           <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Detalhes</th>
+            <th className="p-3">Nome</th>
+            <th className="p-3">Email</th>
+            <th className="p-3">Detalhes</th>
           </tr>
         </thead>
         <tbody>
@@ -41,8 +42,9 @@ const Table = () => {
           ))}
         </tbody>
       </table>
-    </>
-  );
-};
+    </div>
+  ); }
+  
+
 
 export default Table;

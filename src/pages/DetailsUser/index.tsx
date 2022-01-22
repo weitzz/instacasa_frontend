@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../../services/api";
-//import Users from '../../models/Users'
-
-interface Users {
+import {Link} from 'react-router-dom'
+interface User {
   id: number;
   name: string;
   email: string;
+  username: string;
 }
 
 const DetailsUser = () => {
   const { id } = useParams();
-  const [user, setUser] = useState<Users[]>([]);
+  const [user, setUser] = useState<User[]>([]);
   console.log(user);
   useEffect(() => {
     const loadApi = async () => {
@@ -27,7 +27,10 @@ const DetailsUser = () => {
 
  return(
   <>
-    
+  <div>
+    <h2>Teste</h2>
+    <Link to="/users">Voltar</Link>
+  </div>
   </>
 
  )
