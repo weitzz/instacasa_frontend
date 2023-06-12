@@ -5,9 +5,9 @@
 
 > OBS: pode-se utilizar o gerenciador de pacotes npm ou o yarn para rodar os comandos abaixo
 
-Execute ```npm install``` na pasta dahorta para instalar as dependências.
+Execute ```npm install``` na pasta raiz  para instalar as dependências.
 
-Rode ```npm start``` na pasta dahorta. Acesse via **localhost:3000**.
+Rode ```npm start``` na pasta raiz. Acesse via **localhost:3000**.
 
 ---
 
